@@ -81,7 +81,8 @@ export default function RootLayout({
 
 					{wallet ? (
 						<div>
-							<p>Кошелек подключен: {balance}</p>
+							<p>Кошелек подключен: {wallet.account?.address}</p>
+							<p>Баланс: {balance}</p>
 							<button onClick={disconnectWallet}>Отключить кошелек</button>
 						</div>
 					) : (
